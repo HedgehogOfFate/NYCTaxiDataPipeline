@@ -1,0 +1,12 @@
+apache-airflow-providers-apache-spark==4.11.3
+pyspark==3.5.1
+pyarrow==25.0.0
+pandas==2.2.2
+requests==2.32.3
+pytest==8.2.2
+chispa==0.10.1
+great-expectations==0.18.19
+psycopg2-binary==2.9.9
+python-dotenv==1.0.1
+ruff==0.5.0
+black==24.4.2

@@ -1,0 +1,17 @@
+[tool.ruff]
+line-length = 120
+exclude = ["data", ".venv", "great_expectations"]
+
+[tool.ruff.lint]
+# E/F/W: pyflakes + pycodestyle core (unused imports, undefined names, syntax issues).
+# I: import sorting.
+# Deliberately NOT enabling flake8-datetimez (DTZ): TLC trip timestamps are
+# genuinely naive local wall-clock time by design (that's what the source data
+# is), so "datetime without tzinfo" is a false positive across this whole codebase.
+select = ["E", "F", "W", "I"]
+ignore = [
+    "E501",
+]
+
+[tool.black]
+line-length = 120
